@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<center>
+  <p align="center">
+    <img src="https://camo.githubusercontent.com/f21f1fa29dfe5e1d0772b0efe2f43eca2f6dc14f2fede8d9cbef4a3a8210c91d/68747470733a2f2f6173736574732e76657263656c2e636f6d2f696d6167652f75706c6f61642f76313636323133303535392f6e6578746a732f49636f6e5f6c696768745f6261636b67726f756e642e706e67" alt="Nest Logo" width="150" />
+  </p>  
+</center>
+<br />
 
-## Getting Started
+## Como usar
 
-First, run the development server:
+Para clonar e executar este aplicativo, você precisará do [Git](https://git-scm.com) e do [Node.js](https://nodejs.org/en/download/) (que vem com o [npm](http://npmjs.com)) instalados no seu computador. Na sua linha de comando:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone this repository
+$ git clone https://github.com/herlanderbento/next-store.git
+
+# Go into the repository
+$ cd next-store
+
+# Install dependencies
+$ npm install
+
+# Run the db 
+$ npm run db:server
+
+# Run the app
+$ npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> **Note
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tecnologia
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Next >= 13 [x]
+- App Router [x]
+- Tailwind [x]
+- Next Auth (Para Autenticação, Utilizar Google) [ ]
+- Shadcn UI [x]
+- Deploy Vercel [ ]
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Características principais
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Criar Páginas
+    - Login [x]
+    - Cadastro de Produtos [x]
+    - Lista de Produtos [x]
+- Na página de "Cadastro de Produtos"
+    - Nome do Produto [x]
+    - Preço [x]
+    - Descrição [x]
+- Na página de "Lista de Produtos"
+    - Produto [x]
+    - Botão de Adicionar no Carrinho [x]
+    - Grid com 3 Colunas [x]
+    - Adicionar Campo de Busca utilizando searchParams
+- Criar Drawer para "Carrinho" listando produtos adicionados [x]
